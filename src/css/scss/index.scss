@@ -1,0 +1,77 @@
+@import "_mixin.scss";
+@import "common.scss";
+html,
+body {
+    @extend %full;
+}
+
+.wrapper {
+    @extend %full;
+    display: flex;
+    flex-direction: column;
+    .main {
+        width: 100%;
+        flex: 1;
+        background: #edf9fe;
+        .min {
+            width: 70%;
+            margin: rem(50px) auto;
+            height: rem(500px);
+            input {
+                width: 100%;
+                height: rem(40px);
+                background: #fff;
+                border-radius: rem(5px);
+                margin-bottom: rem(15px);
+                padding: 0 rem(15px);
+            }
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .yi {
+                    color: #7fb9f6;
+                }
+                li {
+                    width: 50%;
+                    text-align: center;
+                }
+            }
+            button {
+                width: 100%;
+                height: rem(40px);
+                color: #fff;
+                background: #4994f4;
+                border-radius: rem(5px);
+                margin: rem(15px) 0;
+            }
+            ol {
+                width: 100%;
+                display: flex;
+                text-align: center;
+                margin-bottom: rem(15px);
+                .yi {
+                    color: #7fb9f6;
+                }
+                li {
+                    width: 50%;
+                    text-align: center;
+                }
+            }
+            img {
+                width: 100%;
+                height: rem(100px);
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        height: rem(30px);
+        line-height: rem(30px);
+        text-align: center;
+        span {
+            color: skyblue;
+        }
+    }
+}
